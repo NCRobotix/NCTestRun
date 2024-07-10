@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #D5D5D5;
+}
+
+canvas {
+  border: solid black;
+  border-width: 0px 5px 5px 5px;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes boom {
+  100% {
+    transform: rotate(1080deg) scale(1);
+  }
+}
+
+@keyframes up {
+  25% {
+    top: -4px;
+  }
+}
