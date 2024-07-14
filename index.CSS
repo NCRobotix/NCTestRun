@@ -18,14 +18,3 @@ canvas {
   transform: translate(-50%, -50%);
 }
 
-@keyframes boom {
-  100% {
-    transform: rotate(1080deg) scale(1);
-  }
-}
-
-@keyframes up {
-  25% {
-    top: -4px;
-  }
-}
