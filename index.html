@@ -7,6 +7,7 @@
   <body>
     <canvas id="gameCanvas" width="500" height="300"></canvas>
     <script>
+    window.onload = function draw() {
     const playerOptions = {
     width: 30,
     height: 50,
@@ -52,6 +53,7 @@ const endlessRunnerGame = new EndlessRunnerGame("canvas", frameRate, groundOffse
 
 // Create an instance of the game.
 endlessRunnerGame.start();
+    }
     </script>
   </body>
 </html>
