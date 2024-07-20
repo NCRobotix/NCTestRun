@@ -1,0 +1,22 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 30 -start_number 0 -start_number_range 1 -i C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/frame%04d.png -i C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/KritaTempPalettegen_%06d.png -lavfi [0:v][1:v]paletteuse=dither=sierra2_4a:diff_mode=none -f gif -loop 0 -gifflags +transdiff C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/FlashRunnerWebPageBG.gif
+=====================================================
+Input #0, image2, from 'C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/frame%04d.png':
+  Duration: 00:00:02.44, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 1920x1200 [SAR 2835:2835 DAR 8:5], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Input #1, image2, from 'C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/KritaTempPalettegen_%06d.png':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+[image2 @ 00000220c09755c0] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+Output #0, gif, to 'C:/Users/NoahC/Downloads/Awesome/Games and Records  T_T/Assets - Pixel Art/Flash Runner/FlashRunnerWebPageBG.gif':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 1920x1200 [SAR 1:1 DAR 8:5], q=2-31, 200 kb/s, 30 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc58.134.100 gif
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=0.231x    frame=    7 fps=0.0 q=-0.0 size=     256kB time=00:00:00.21 bitrate=9986.4kbits/s speed=0.339x    frame=   12 fps=9.5 q=-0.0 size=     256kB time=00:00:00.38 bitrate=5518.8kbits/s speed= 0.3x    frame=   17 fps=9.2 q=-0.0 size=     512kB time=00:00:00.54 bitrate=7767.2kbits/s speed=0.292x    frame=   23 fps=9.5 q=-0.0 size=     768kB time=00:00:00.74 bitrate=8502.0kbits/s speed=0.305x    frame=   27 fps=8.9 q=-0.0 size=    1024kB time=00:00:00.88 bitrate=9532.5kbits/s speed=0.291x    frame=   32 fps=8.9 q=-0.0 size=    1024kB time=00:00:01.04 bitrate=8066.0kbits/s speed=0.291x    frame=   37 fps=8.9 q=-0.0 size=    1280kB time=00:00:01.21 bitrate=8665.9kbits/s speed=0.29x    frame=   42 fps=8.8 q=-0.0 size=    1536kB time=00:00:01.38 bitrate=9118.1kbits/s speed=0.29x    frame=   47 fps=8.8 q=-0.0 size=    1792kB time=00:00:01.54 bitrate=9532.5kbits/s speed=0.289x    frame=   52 fps=8.9 q=-0.0 size=    2048kB time=00:00:01.71 bitrate=9811.2kbits/s speed=0.293x    frame=   58 fps=9.0 q=-0.0 size=    2304kB time=00:00:01.91 bitrate=9881.9kbits/s speed=0.295x    frame=   61 fps=8.9 q=-0.0 Lsize=    2514kB time=00:00:02.01 bitrate=10245.5kbits/s speed=0.293x    
+video:2514kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000777%
