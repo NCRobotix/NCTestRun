@@ -5,8 +5,7 @@
 
 body {
   height: 100vh;
-  background-color: #D5D5D5;
-  background-image: "./Media/FRWebsiteBackground.gif";
+  background-image: url("./Media/FRWebsiteBackground.gif");
 }
 
 canvas {
