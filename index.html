@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Flash Runner Game</title>
-    <script src="./index.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/movement.js"></script>
+    <script src="./JS/obstacles.js"></script>
+    <script src="./JS/runnerGame.js"></script>
     <link rel="stylesheet" href="./index.CSS">
   </head>
   <body>
@@ -11,12 +14,12 @@
     //window.onload = function draw() {
 
     const playerOptions = {
-    width: 30,
-    height: 30,
+    width: 60,
+    height: 60,
     startX: 40,
     jumpPower: 15,
     jumpHeight: 220,
-    gravity: 12,
+    gravity: 15,
     playSpeed: 2,
     showTime: 5,
     imageSources: [
@@ -31,7 +34,7 @@
 const spawnerOptions = {
     width: 30,
     height: 50,
-    minLength: 180,
+    minLength: 160,
     maxlength: 220,
     speed: 5,
     maxActive: 2,
@@ -54,7 +57,6 @@ const frameRate = 30;
 const groundOffset = 20;
 const endlessRunnerGame = new EndlessRunnerGame("gameCanvas", frameRate, groundOffset, playerOptions, spawnerOptions, difficulty);
 
-// Create an instance of the game.
 endlessRunnerGame.start();
     
     </script>
