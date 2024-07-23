@@ -17,18 +17,20 @@ class EndlessRunnerGame {
         this.spawner = Spawner.create(spawnerOptions, this.canvas.width, this.groundY);
         this.speed = 0;
         this.score = 0;
+        this.screen = 0;
         this.gameOver = false;
     }
 
     // A method used to start the game.
     start() {
+        this.drawIntro();
         document.addEventListener('keydown', this.keydown.bind(this));
         setInterval(this.loop.bind(this), this.frameRate);
     }
 
     // A method used to execute the game's keydown events.
     keydown(event) {
-        if (event.code == 'Space') {
+        if (event.code == 'Space' && screen == 1) {
             // If the game is ended,
             // restart the game.
             if (this.gameOver)
@@ -37,6 +39,10 @@ class EndlessRunnerGame {
             // player's jump behaviour.
             else
                 this.player.jump();
+        }
+        if(event.code == 'Space' && screen == 0){
+            this.screen = 1;
+            setInterval(this.loop.bind(this), this.frameRate);
         }
     }
 
