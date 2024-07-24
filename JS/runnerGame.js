@@ -93,6 +93,14 @@ class EndlessRunnerGame {
         this.ctx.filltext("DODGE THE OBSTACLES", this.canvas.width / 2, this.canvas.height / 2,);
         this.ctx.filltext("PRESS SPACEBAR TO JUMP", this.canvas.width / 2, (this.canvas.height / 2) - 10);
         this.ctx.closePath();
+
+        const playButton = document.createElement('button');
+        playButton.textContent = 'START';
+        document.body.appendChild(newButton);
+        playButton.addEventListiner('click', () => {
+            this.start();
+            playButton.visibility = 'hidden';
+        });
     }
     
     // A method used to draw the game over text
