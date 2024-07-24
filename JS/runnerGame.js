@@ -89,11 +89,9 @@ class EndlessRunnerGame {
 
     //singles start of game
     drawIntro() {
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.ctx.beginPath();
-        this.ctx.filltext("HOW TO PLAY", this.canvas.width / 2, (this.canvas.height / 2) + 10);
-        this.ctx.filltext("DODGE THE OBSTACLES", this.canvas.width / 2, this.canvas.height / 2);
-        this.ctx.filltext("PRESS SPACEBAR TO JUMP", this.canvas.width / 2, (this.canvas.height / 2) - 10);
+        this.ctx.fillText("HOW TO PLAY", this.canvas.width / 2, (this.canvas.height / 2) + 5);
+        this.ctx.fillText("PRESS SPACEBAR TO JUMP", this.canvas.width / 2, (this.canvas.height / 2) - 5);
         this.ctx.closePath();
 
         const playButton = document.createElement('button');
@@ -108,7 +106,6 @@ class EndlessRunnerGame {
     // A method used to draw the game over text
     // if the game ends.
     drawGameOver() {
-        this.background.draw(this.ctx);
         this.ctx.beginPath();
         this.ctx.fillText("GAME OVER", this.canvas.width / 2, (this.canvas.height / 2) + 5);
         this.ctx.fillText("PRESS SPACEBAR TO RESTART", this.canvas.width / 2, (this.canvas.height / 2) - 5);
