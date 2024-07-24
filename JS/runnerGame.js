@@ -7,7 +7,7 @@ class EndlessRunnerGame {
         this.playerOptions = playerOptions;
         this.spawnerOptions = spawnerOptions;
         this.difficulty = difficulty;
-        initialize();
+        this.initialize();
     }
 
     // A method used to initialize the game.
