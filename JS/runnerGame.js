@@ -7,7 +7,7 @@ class EndlessRunnerGame {
         this.playerOptions = playerOptions;
         this.spawnerOptions = spawnerOptions;
         this.difficulty = difficulty;
-        drawIntro();
+        initialize();
     }
 
     // A method used to initialize the game.
@@ -22,7 +22,6 @@ class EndlessRunnerGame {
 
     // A method used to start the game.
     start() {
-        initialize();
         document.addEventListener('keydown', this.keydown.bind(this));
         setInterval(this.loop.bind(this), this.frameRate);
     }
@@ -90,8 +89,8 @@ class EndlessRunnerGame {
     //singles start of game
     drawIntro() {
         this.ctx.beginPath();
-        this.ctx.fillText("HOW TO PLAY", this.canvas.width / 2, (this.canvas.height / 2) + 5);
-        this.ctx.fillText("PRESS SPACEBAR TO JUMP", this.canvas.width / 2, (this.canvas.height / 2) - 5);
+        this.ctx.fillText("FLASH RUNNER", this.canvas.width / 2, (this.canvas.height / 2) + 5);
+        this.ctx.fillText("GAME BY NCROBOTIX", this.canvas.width / 2, (this.canvas.height / 2) - 5);
         this.ctx.closePath();
 
         const playButton = document.createElement('button');
