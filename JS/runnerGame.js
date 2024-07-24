@@ -88,9 +88,10 @@ class EndlessRunnerGame {
 
     //singles start of game
     drawIntro() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.ctx.beginPath();
         this.ctx.filltext("HOW TO PLAY", this.canvas.width / 2, (this.canvas.height / 2) + 10);
-        this.ctx.filltext("DODGE THE OBSTACLES", this.canvas.width / 2, this.canvas.height / 2,);
+        this.ctx.filltext("DODGE THE OBSTACLES", this.canvas.width / 2, this.canvas.height / 2);
         this.ctx.filltext("PRESS SPACEBAR TO JUMP", this.canvas.width / 2, (this.canvas.height / 2) - 10);
         this.ctx.closePath();
 
