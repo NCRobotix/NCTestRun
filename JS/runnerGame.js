@@ -7,7 +7,6 @@ class EndlessRunnerGame {
         this.playerOptions = playerOptions;
         this.spawnerOptions = spawnerOptions;
         this.difficulty = difficulty;
-        this.initialize();
     }
 
     // A method used to initialize the game.
@@ -22,6 +21,7 @@ class EndlessRunnerGame {
 
     // A method used to start the game.
     start() {
+        initialize();
         document.addEventListener('keydown', this.keydown.bind(this));
         setInterval(this.loop.bind(this), this.frameRate);
     }
