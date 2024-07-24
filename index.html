@@ -6,7 +6,6 @@
     <script src="./JS/movement.js"></script>
     <script src="./JS/obstacles.js"></script>
     <script src="./JS/runnerGame.js"></script>
-    <script src="./JS/screen.js"></script>
     <link rel="stylesheet" href="./index.CSS">
   </head>
   <body>
@@ -57,7 +56,7 @@ const difficulty = {
 const frameRate = 30;
 const groundOffset = 20;
 const endlessRunnerGame = new EndlessRunnerGame("gameCanvas", frameRate, groundOffset, playerOptions, spawnerOptions, difficulty);
-endlessRunnerGame.start();
+endlessRunnerGame.drawIntro();
     
     </script>
   </body>
