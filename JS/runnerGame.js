@@ -23,7 +23,7 @@ class EndlessRunnerGame {
     // A method used to start the game.
     start() {
         document.addEventListener('keydown', this.keydown.bind(this));
-        this.drawIntro.bind(this);
+        setInterval(this.loop.bind(this), this.frameRate);
     }
 
     // A method used to execute the game's keydown events.
@@ -38,7 +38,7 @@ class EndlessRunnerGame {
             else
                 this.player.jump();
         }
-            //setInterval(this.loop.bind(this), this.frameRate);
+            //
     }
 
     // A method used to execute the game's continuous behaviour.
