@@ -98,6 +98,7 @@ class EndlessRunnerGame {
     // A method used to draw the game over text
     // if the game ends.
     drawGameOver() {
+        this.background.draw(this.ctx);
         this.ctx.beginPath();
         this.ctx.fillText("GAME OVER", this.canvas.width / 2, (this.canvas.height / 2) + 5);
         this.ctx.fillText("PRESS SPACEBAR TO RESTART", this.canvas.width / 2, (this.canvas.height / 2) - 5);
