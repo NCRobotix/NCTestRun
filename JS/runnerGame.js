@@ -93,10 +93,9 @@ class EndlessRunnerGame {
         this.ctx.fillText("GAME BY NCROBOTIX", this.canvas.width / 2, (this.canvas.height / 2) - 5);
         this.ctx.closePath();
 
+        this.ctx.beginPath();
         this.ctx.drawImage("./Media/Players/RedPlayer1.png", this.canvas.width / 4, this.canvas.height / 4);
-        
-
-        
+        this.ctx.closePath();   
        // playButton.addEventListener('click', () => {
            // this.start();
            // playButton.visibility = 'hidden';
