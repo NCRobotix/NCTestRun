@@ -95,34 +95,7 @@ class EndlessRunnerGame {
 
         const playButton = document.createElement('button');
         playButton.textContent = 'START';
-        const playButton = new Path2D();
-        playButton.rect(250, 350, 200, 100);
-        playButton.rect(25,72,32,32);
-        playButton.closePath();
         
-        //draw your shape data to the context
-        playButton.fillStyle = "#FFFFFF";
-        playButton.fillStyle = "rgba(225,225,225,0.5)";
-        playButton.fill(path);
-        playButton.lineWidth = 2;
-        playButton.strokeStyle = "#000000";
-        playButton.stroke(path);
-        
-        getXY(canvas, event){ //adjust mouse click to canvas coordinates
-          const rect = this.ctx.getBoundingClientRect();
-          const y = event.clientY - rect.top;
-          const x = event.clientX - rect.left;
-          return {x:x, y:y};
-        }
-
-        document.addEventListener("click",  function (e) {
-          const XY = getXY(canvas, e)
-          //use the shape data to determine if there is a collision
-          if(context.isPointInPath(path, XY.x, XY.y)) {
-            this.start();
-            
-          }
-        }, false);
 
         
        // playButton.addEventListener('click', () => {
