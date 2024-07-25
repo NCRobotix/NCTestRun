@@ -95,7 +95,7 @@ class EndlessRunnerGame {
 
         const playButton = document.createElement('button');
         playButton.textContent = 'START';
-        document.body.appendChild(newButton);
+        document.body.appendChild(playButton);
         playButton.addEventListiner('click', () => {
             this.start();
             playButton.visibility = 'hidden';
