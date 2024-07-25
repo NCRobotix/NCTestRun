@@ -93,8 +93,7 @@ class EndlessRunnerGame {
         this.ctx.fillText("GAME BY NCROBOTIX", this.canvas.width / 2, (this.canvas.height / 2) - 5);
         this.ctx.closePath();
 
-        const playButton = document.createElement('button');
-        playButton.textContent = 'START';
+        this.ctx.drawImage("./Media/Players/RedPlayer1.png", this.canvas.width / 4, this.canvas.height / 4);
         
 
         
