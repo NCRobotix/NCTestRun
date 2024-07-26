@@ -98,7 +98,7 @@ class EndlessRunnerGame {
         this.ctx.beginPath();
         this.ctx.drawImage(playBut, 100, this.canvas.height / 4);
         this.ctx.closePath();   
-        playBut.addEventListener('click', () => {
+        this.playBut.addEventListener('click', () => {
             this.start();
            // playButton.visibility = 'hidden';
         });
