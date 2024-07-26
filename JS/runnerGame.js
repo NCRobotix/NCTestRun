@@ -88,19 +88,19 @@ class EndlessRunnerGame {
 
     //singles start of game
     drawIntro() {
-        const playBut = new Image();
-        playBut.src = "./Media/Players/YellowPlayer.png";
         this.ctx.beginPath();
         this.ctx.fillText("FLASH RUNNER", this.canvas.width / 2, (this.canvas.height / 2) + 5);
         this.ctx.fillText("GAME BY NCROBOTIX", this.canvas.width / 2, (this.canvas.height / 2) - 5);
         this.ctx.closePath();
 
-        this.ctx.beginPath();
-        this.ctx.drawImage(playBut, 100, this.canvas.height / 4);
-        this.ctx.closePath();   
-        this.playBut.addEventListener('click', () => {
+        const playB = document.createElement('button');
+        playB.textContext = "START";
+        playB.innerHTML = "<img src="./Media/Players/YellowPlayer.png">";
+        playB.setAttribute('style', 'top:1500px;left:1000px;');
+
+        this.playB.addEventListener('click', () => {
             this.start();
-           // playButton.visibility = 'hidden';
+           // playB.visibility = 'hidden';
         });
     }
     
