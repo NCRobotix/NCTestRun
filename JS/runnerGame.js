@@ -96,12 +96,12 @@ class EndlessRunnerGame {
         this.ctx.closePath();
 
         this.ctx.beginPath();
-        this.ctx.drawImage(playBut, this.canvas.width / 2, this.canvas.height / 2);
+        this.ctx.drawImage(playBut, this.canvas.width / 4, this.canvas.height / 4);
         this.ctx.closePath();   
-       // playBut.addEventListener('click', () => {
-           // this.start();
+        playBut.addEventListener('click', () => {
+            this.start();
            // playButton.visibility = 'hidden';
-       // });
+        });
     }
     
     // A method used to draw the game over text
