@@ -94,7 +94,7 @@ class EndlessRunnerGame {
         this.ctx.closePath();
 
         this.ctx.beginPath();
-        this.ctx.drawImage("./Media/Players/RedPlayer1.png", this.canvas.width / 4, this.canvas.height / 4);
+        this.ctx.drawImage("./Media/Players/YellowPlayer.png", this.canvas.width / 2, this.canvas.height / 2);
         this.ctx.closePath();   
        // playButton.addEventListener('click', () => {
            // this.start();
